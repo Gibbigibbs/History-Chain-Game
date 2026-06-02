@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: radial-gradient(circle at top, #1e1f2e, #0f1020);
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 500px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* LOGO */
+.logoBox {
+    display: inline-flex;
+    gap: 10px;
+    padding: 10px 20px;
+    background: #222;
+    border-radius: 20px;
+}
+
+.before { color: #4caf50; font-weight: bold; }
+.after { color: #2196f3; font-weight: bold; }
+.arrow { opacity: 0.6; }
+
+/* CARDS */
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* EVENTS */
+.eventBox {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#beforeBtn { background: #4caf50; color: white; }
+#afterBtn { background: #2196f3; color: white; }
+
+/* GRID */
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* TILE FLIP */
+.tile {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: #444;
+    transform-style: preserve-3d;
+}
+
+.flip {
+    animation: flip 0.5s ease;
+}
+
+@keyframes flip {
+    0% { transform: rotateX(0); }
+    50% { transform: rotateX(90deg); }
+    100% { transform: rotateX(0); }
+}
