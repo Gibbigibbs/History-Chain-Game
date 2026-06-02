@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Before or After</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <div class="logoBox">
+            <span class="before">Before</span>
+            <span class="arrow">⇄</span>
+            <span class="after">After</span>
+        </div>
+    </div>
+
+    <h1>History Chain</h1>
+
+    <div id="gameScreen" class="card">
+
+        <h2>Daily Challenge</h2>
+        <h3>Round <span id="round">1</span> / 5</h3>
+
+        <div class="eventBox">
+            <h3 id="eventA"></h3>
+            <p id="yearA"></p>
+        </div>
+
+        <div class="eventBox">
+            <h3 id="eventB"></h3>
+        </div>
+
+        <p id="message"></p>
+
+        <div class="buttons">
+            <button id="beforeBtn">Before</button>
+            <button id="afterBtn">After</button>
+        </div>
+
+    </div>
+
+    <div id="resultScreen" class="card" style="display:none;">
+        <h2 id="finalText"></h2>
+        <div id="resultGrid" class="grid"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
